@@ -1,0 +1,104 @@
+; ===== Cilindro Simples (Gerado em Python) =====
+G21       ; Unidades em milímetros
+G90       ; Coordenadas absolutas
+M82       ; Extrusão absoluta
+
+; Preparação da Impressora
+G28       ; Home em todos os eixos (X, Y e Z)
+G92 E0    ; Zera a posição do extrusor
+M107      ; Desliga o ventilador de resfriamento
+
+; Parâmetros da Impressão
+; Raio = 10.0 mm
+; Altura = 5.0 mm
+; Altura da camada = 0.2 mm
+; Número de camadas = 25
+
+; Movimento e Posicionamento
+G0 F3000 ; Define a velocidade de movimento rápido
+G0 X120.0 Y110.0 Z0.2 ; Vai para a borda do cilindro
+G1 F1200 ; Define a velocidade de extrusão
+M83       ; Muda para extrusão relativa
+
+; Loop de Camadas
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z0.40 ; Sobe para a camada 2
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z0.60 ; Sobe para a camada 3
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z0.80 ; Sobe para a camada 4
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z1.00 ; Sobe para a camada 5
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z1.20 ; Sobe para a camada 6
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z1.40 ; Sobe para a camada 7
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z1.60 ; Sobe para a camada 8
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z1.80 ; Sobe para a camada 9
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z2.00 ; Sobe para a camada 10
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z2.20 ; Sobe para a camada 11
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z2.40 ; Sobe para a camada 12
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z2.60 ; Sobe para a camada 13
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z2.80 ; Sobe para a camada 14
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z3.00 ; Sobe para a camada 15
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z3.20 ; Sobe para a camada 16
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z3.40 ; Sobe para a camada 17
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z3.60 ; Sobe para a camada 18
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z3.80 ; Sobe para a camada 19
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z4.00 ; Sobe para a camada 20
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z4.20 ; Sobe para a camada 21
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z4.40 ; Sobe para a camada 22
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z4.60 ; Sobe para a camada 23
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z4.80 ; Sobe para a camada 24
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+G0 Z5.00 ; Sobe para a camada 25
+G0 X120.0 Y110.0 ; Posiciona na borda do círculo
+G2 I-10.0 J0 E62.8319 ; Desenha o círculo
+
+; Finalização
+M82       ; Volta para extrusão absoluta
+G91       ; Coordenadas relativas
+G1 Z5 F1200 ; Sobe o bico em 5mm para descolar da peça
+G90       ; Coordenadas absolutas
+G28 X Y   ; Home nos eixos X e Y
+M84       ; Desliga os motores
